@@ -628,6 +628,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.display.color@1.0 \
+    libMpeg4SwEncoder \
+    libOmxSwVdec \
+    libOmxSwVencMpeg4 \
     libaudio_log_utils \
     libgpustats \
     libsdm-disp-vndapis \

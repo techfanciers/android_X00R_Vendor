@@ -38,6 +38,63 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libMpeg4SwEncoder",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libMpeg4SwEncoder.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libMpeg4SwEncoder.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libOmxSwVdec",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libOmxSwVdec.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libOmxSwVdec.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libOmxSwVencMpeg4",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libOmxSwVencMpeg4.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libOmxSwVencMpeg4.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libaudio_log_utils",
 	owner: "asus",
 	strip: {
