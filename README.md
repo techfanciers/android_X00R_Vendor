@@ -1,0 +1,1 @@
+# android_X00R_Vendor
